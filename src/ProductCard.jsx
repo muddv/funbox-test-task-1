@@ -1,7 +1,9 @@
 import { useState } from 'react';
+import './ProductCard.css';
+import product_img from './assets/images/product-card-image.png'
 import classResolver from './classResolver';
 
-function ProductCard({ productType, productTypePortionNumber, productTypeGift, productAdditionalInformation, productWeight, productDescription, cardDisabled = 0 }) {
+function ProductCard({ productType, productTypePortionNumber, productTypeGift, productAdditionalInformation, productWeight, productDescription, cardDisabled=0 }) {
     const [isSelected, setIsSelected] = useState(false);
     const toggleSelected = () => {
         cardDisabled === 1 ? null : setIsSelected(!isSelected);
@@ -32,7 +34,7 @@ function ProductCard({ productType, productTypePortionNumber, productTypeGift, p
                     </div>
                     <div className="product-card__image">
                         <img
-                            src="./src/assets/images/product-card-image.png"
+                            src={product_img}
                             alt="Кот, который ждёт Нямушку"
                         />
                     </div>

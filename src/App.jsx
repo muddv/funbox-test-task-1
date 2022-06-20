@@ -1,9 +1,8 @@
-import './App.css'
+import './App.css';
 import ProductCard from './ProductCard'
 import disableResolver from './disableResolver'
 
 function App() {
-
   return (
     <div className="container">
       <p className="container__product-tagline">Ты сегодня покормил кота?</p>
