@@ -1,0 +1,19 @@
+@font-face {
+  font-family: "Exo 2";
+  src: url("./assets/fonts/exo2.0-thin-webfont.woff2") format("woff2"),
+       url("./assets/fonts/exo2.0-thin-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+  font-family: 'Exo 2', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
